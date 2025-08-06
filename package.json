@@ -1,0 +1,53 @@
+{
+  "name": "scrap-corner-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build && next export",
+    "cap:add": "npx cap add ios",
+    "cap:sync": "npx cap sync",
+    "cap:open": "npx cap open ios",
+    "cap:build": "npm run build && npx cap sync && npx cap open ios"
+  },
+  "dependencies": {
+    "next": "^14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.0",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.6",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "@capacitor/core": "^5.5.1",
+    "@capacitor/cli": "^5.5.1",
+    "@capacitor/ios": "^5.5.1",
+    "@capacitor/app": "^5.0.6",
+    "@capacitor/haptics": "^5.0.6",
+    "@capacitor/keyboard": "^5.0.6",
+    "@capacitor/status-bar": "^5.0.6",
+    "@capacitor/splash-screen": "^5.0.6",
+    "@capacitor/camera": "^5.0.8",
+    "@capacitor/filesystem": "^5.1.4",
+    "@capacitor/share": "^5.0.6",
+    "@capacitor/geolocation": "^5.0.6",
+    "@capacitor/push-notifications": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "eslint-config-next": "^14.0.4"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "overrides": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
